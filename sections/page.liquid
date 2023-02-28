@@ -20,18 +20,18 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-    <h2 class="page-title {{ section.settings.heading_size }}">
+    <h2 class="page-title">
       {%- if section.settings.page.title != blank -%}
         {{ section.settings.page.title | escape }}
       {%- else -%}
-        {{ 'sections.page.title' | t }}
+        Page title
       {%- endif -%}
     </h2>
     <div class="rte">
       {%- if section.settings.page.content != blank -%}
         {{ section.settings.page.content }}
       {%- else -%}
-        <div class="page-placeholder-wrapper placeholder">
+        <div class='page-placeholder-wrapper placeholder'>
           {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
         </div>
       {%- endif -%}
@@ -44,34 +44,11 @@
   "name": "t:sections.page.name",
   "tag": "section",
   "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
   "settings": [
     {
       "type": "page",
       "id": "page",
       "label": "t:sections.page.settings.page.label"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
     },
     {
       "type": "select",

@@ -3,8 +3,20 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "show_vendor": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "cart-term-and-condition": {
+      "type": "cart-term-and-condition",
+      "settings": {
+        "Term_of_buy": "Terms of Purchase",
+        "Term_of_buy_text": "<p>Please note that your plan needs to be manually processed by our architectural team, orders are processed within 1 business day. If modifications are requested, this will delay the processing. <\/p>",
+        "engineering": "Engineering",
+        "Term_of_eng_text": "<p>Please note that our house plans are designed to meet International Building Codes and are not designed for any specific area. If required by your local jurisdiction, your plans will need to be stamped by your local licensed engineers.<\/p>",
+        "acceptance_heading": "Please Review and Accept",
+        "acceptance_label": "<p>Due to copyright laws, all sales of our house plans and modifications are final. No refunds or exchanges can be given once your order has been placed.<\/p>"
       }
     },
     "cart-footer": {
@@ -12,13 +24,12 @@
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "disabled": true,
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -26,38 +37,38 @@
         "buttons"
       ],
       "settings": {
+        "show_cart_note": false
       }
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
         "collection": "all",
         "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "background-1",
+        "show_view_all": true,
+        "show_price": false,
+        "swipe_on_mobile": false,
         "image_ratio": "square",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "bedrooms": "",
+        "bedrooms_icon": "",
+        "bathroom": "",
+        "bathroom_icon": "",
+        "area": "",
+        "area_icon": ""
       }
     }
   },
   "order": [
     "cart-items",
+    "cart-term-and-condition",
     "cart-footer",
     "featured-collection"
   ]

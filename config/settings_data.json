@@ -1,145 +1,194 @@
 {
-  "current": "Default",
+  "current": {
+    "colors_accent_1": "#fe8369",
+    "colors_text": "#303030",
+    "type_header_font": "playfair_display_n4",
+    "type_body_font": "muli_n4",
+    "body_scale": 100,
+    "page_width": 1300,
+    "spacing_grid_horizontal": 20,
+    "spacing_grid_vertical": 20,
+    "card_color_scheme": "background-2",
+    "media_shadow_vertical_offset": 0,
+    "social_twitter_link": "https:\/\/twitter.com",
+    "social_facebook_link": "https:\/\/facebook.com",
+    "social_instagram_link": "http:\/\/instagram.com",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Group_9988.png",
+    "checkout_logo_position": "center",
+    "checkout_body_background_color": "#f4f4f4",
+    "checkout_sidebar_background_color": "#fefefe",
+    "checkout_accent_color": "#fe8369",
+    "checkout_button_color": "#fe8369",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "(888) 814-1494",
+              "color_scheme": "inverse",
+              "link": "tel:1-888-814-1494",
+              "menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/logo.webp",
+          "logo_width": 155,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0,
+          "header_phoneNo": "(888) 814-1494",
+          "header_MailTo": "sales@garrellassociates.com"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "6498c648-b7d4-48e2-92d4-af0aa95ae927": {
+            "type": "Contact_items",
+            "settings": {
+              "heading": "Contact Us",
+              "Contact_number": "1-(888) 814-1494",
+              "show_Socail_Icons": true
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "47aa87fd-c27e-46c1-bc40-fb8efcdcae95": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Sitemap",
+              "menu": "footer-menu2"
+            }
+          },
+          "d46d78c9-b3b0-4463-a3a0-ec39d3b5df27": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Discover",
+              "menu": "footer-menu3"
+            }
+          }
+        },
+        "block_order": [
+          "6498c648-b7d4-48e2-92d4-af0aa95ae927",
+          "footer-0",
+          "47aa87fd-c27e-46c1-bc40-fb8efcdcae95",
+          "d46d78c9-b3b0-4463-a3a0-ec39d3b5df27"
+        ],
+        "settings": {
+          "color_scheme": "inverse",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our emails",
+          "Copyright_Enable": true,
+          "terms_Condition_Enable": true,
+          "Copyright_text": "2022 Garrell Associates",
+          "termService_text": "#!",
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "margin_top": 40,
+          "padding_top": 40,
+          "padding_bottom": 0
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {}
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {}
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "807785498547235276": {
+        "type": "shopify:\/\/apps\/contact-form-ultimate\/blocks\/app-embed-block\/7f36c127-5e2b-4909-bcc7-2631483e37a4",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
   "presets": {
     "Default": {
-      "logo_width": 90,
-      "colors_solid_button_labels": "#ffffff",
-      "colors_accent_1": "#121212",
-      "gradient_accent_1": "",
-      "colors_accent_2": "#334fb4",
-      "gradient_accent_2": "",
-      "colors_text": "#121212",
-      "colors_outline_button_labels": "#121212",
-      "colors_background_1": "#ffffff",
-      "gradient_background_1": "",
-      "colors_background_2": "#f3f3f3",
-      "gradient_background_2": "",
-      "type_header_font": "assistant_n4",
-      "heading_scale": 100,
-      "type_body_font": "assistant_n4",
-      "body_scale": 100,
-      "page_width": 1200,
-      "spacing_sections": 0,
-      "spacing_grid_horizontal": 8,
-      "spacing_grid_vertical": 8,
-      "buttons_border_thickness": 1,
-      "buttons_border_opacity": 100,
-      "buttons_radius": 0,
-      "buttons_shadow_opacity": 0,
-      "buttons_shadow_horizontal_offset": 0,
-      "buttons_shadow_vertical_offset": 4,
-      "buttons_shadow_blur": 5,
-      "variant_pills_border_thickness": 1,
-      "variant_pills_border_opacity": 55,
-      "variant_pills_radius": 40,
-      "variant_pills_shadow_opacity": 0,
-      "variant_pills_shadow_horizontal_offset": 0,
-      "variant_pills_shadow_vertical_offset": 4,
-      "variant_pills_shadow_blur": 5,
-      "inputs_border_thickness": 1,
-      "inputs_border_opacity": 55,
-      "inputs_radius": 0,
-      "inputs_shadow_opacity": 0,
-      "inputs_shadow_horizontal_offset": 0,
-      "inputs_shadow_vertical_offset": 4,
-      "inputs_shadow_blur": 5,
-      "card_style": "standard",
-      "card_image_padding": 0,
-      "card_text_alignment": "left",
-      "card_color_scheme": "background-2",
-      "card_border_thickness": 0,
-      "card_border_opacity": 10,
-      "card_corner_radius": 0,
-      "card_shadow_opacity": 0,
-      "card_shadow_horizontal_offset": 0,
-      "card_shadow_vertical_offset": 4,
-      "card_shadow_blur": 5,
-      "collection_card_style": "standard",
-      "collection_card_image_padding": 0,
-      "collection_card_text_alignment": "left",
-      "collection_card_color_scheme": "background-2",
-      "collection_card_border_thickness": 0,
-      "collection_card_border_opacity": 10,
-      "collection_card_corner_radius": 0,
-      "collection_card_shadow_opacity": 0,
-      "collection_card_shadow_horizontal_offset": 0,
-      "collection_card_shadow_vertical_offset": 4,
-      "collection_card_shadow_blur": 5,
-      "blog_card_style": "standard",
-      "blog_card_image_padding": 0,
-      "blog_card_text_alignment": "left",
-      "blog_card_color_scheme": "background-2",
-      "blog_card_border_thickness": 0,
-      "blog_card_border_opacity": 10,
-      "blog_card_corner_radius": 0,
-      "blog_card_shadow_opacity": 0,
-      "blog_card_shadow_horizontal_offset": 0,
-      "blog_card_shadow_vertical_offset": 4,
-      "blog_card_shadow_blur": 5,
-      "text_boxes_border_thickness": 0,
-      "text_boxes_border_opacity": 10,
-      "text_boxes_radius": 0,
-      "text_boxes_shadow_opacity": 0,
-      "text_boxes_shadow_horizontal_offset": 0,
-      "text_boxes_shadow_vertical_offset": 4,
-      "text_boxes_shadow_blur": 5,
-      "media_border_thickness": 1,
-      "media_border_opacity": 5,
-      "media_radius": 0,
-      "media_shadow_opacity": 0,
-      "media_shadow_horizontal_offset": 0,
-      "media_shadow_vertical_offset": 4,
-      "media_shadow_blur": 5,
-      "popup_border_thickness": 1,
-      "popup_border_opacity": 10,
-      "popup_corner_radius": 0,
-      "popup_shadow_opacity": 0,
-      "popup_shadow_horizontal_offset": 0,
-      "popup_shadow_vertical_offset": 4,
-      "popup_shadow_blur": 5,
-      "drawer_border_thickness": 1,
-      "drawer_border_opacity": 10,
-      "drawer_shadow_opacity": 0,
-      "drawer_shadow_horizontal_offset": 0,
-      "drawer_shadow_vertical_offset": 4,
-      "drawer_shadow_blur": 5,
-      "badge_position": "bottom left",
-      "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "accent-2",
-      "sold_out_badge_color_scheme": "inverse",
-      "accent_icons": "text",
-      "brand_headline": "",
-      "brand_description": "<p><\/p>",
-      "brand_image_width": 100,
-      "social_twitter_link": "",
-      "social_facebook_link": "",
-      "social_pinterest_link": "",
-      "social_instagram_link": "",
-      "social_tiktok_link": "",
-      "social_tumblr_link": "",
-      "social_snapchat_link": "",
-      "social_youtube_link": "",
-      "social_vimeo_link": "",
-      "predictive_search_enabled": true,
-      "predictive_search_show_vendor": false,
-      "predictive_search_show_price": false,
-      "currency_code_enabled": true,
-      "cart_type": "notification",
-      "show_vendor": false,
-      "show_cart_note": false,
-      "cart_drawer_collection": "",
       "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_width": 90
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "margin_top": 48
+          }
+        },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": {
-            "color_scheme": "background-1"
-          }
+          "settings": {}
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": {
-            "color_scheme": "background-1"
-          }
+          "settings": {}
         }
       }
     }

@@ -36,13 +36,11 @@
       "previous": "Forrige side"
     },
     "search": {
-      "search": "Søg",
-      "reset": "Ryd søgeord"
+      "search": "Søg"
     },
     "cart": {
       "view": "Se min indkøbskurv ({{ count }})",
-      "item_added": "Varen er lagt i indkøbskurven",
-      "view_empty_cart": "Vis min indkøbskurv"
+      "item_added": "Varen er lagt i indkøbskurven"
     },
     "share": {
       "copy_to_clipboard": "Kopiér link",
@@ -53,8 +51,7 @@
     "slider": {
       "of": "af",
       "next_slide": "Skub til højre",
-      "previous_slide": "Skub til venstre",
-      "name": "Diasshow"
+      "previous_slide": "Skub til venstre"
     }
   },
   "newsletter": {
@@ -77,8 +74,7 @@
     "skip_to_product_info": "Gå til produktoplysninger",
     "total_reviews": "anmeldelser i alt",
     "star_reviews_info": "{{ rating_value }} ud af {{ rating_max }} stjerner",
-    "collapsible_content_title": "Indhold, der kan skjules",
-    "complementary_products": "Supplerende produkter"
+    "collapsible_content_title": "Indhold, der kan skjules"
   },
   "blogs": {
     "article": {
@@ -114,11 +110,7 @@
         "label": "Antal",
         "input_label": "Antal for {{ product }}",
         "increase": "Øg antallet for {{ product }}",
-        "decrease": "Reducer antallet for {{ product }}",
-        "minimum_of": "Minimum på {{ quantity }}",
-        "maximum_of": "Maksimum på {{ quantity }}",
-        "multiples_of": "Intervaller på {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> i indkøbskurven"
+        "decrease": "Reducer antallet for {{ product }}"
       },
       "price": {
         "from_price_html": "Fra {{ price }}",
@@ -154,18 +146,7 @@
       },
       "view_full_details": "Se komplette oplysninger",
       "include_taxes": "Inklusive skat.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling.",
-      "choose_options": "Vælg muligheder",
-      "choose_product_options": "Vælg muligheder for {{ product_name }}",
-      "value_unavailable": "{{ option_value }} - Ikke tilgængelig",
-      "variant_sold_out_or_unavailable": "Varianten er udsolgt eller utilgængelig",
-      "inventory_in_stock": "På lager",
-      "inventory_in_stock_show_count": "{{ quantity }} på lager",
-      "inventory_low_stock": "Lav lagerbeholdning",
-      "inventory_low_stock_show_count": "Lav lagerbeholdning: {{ quantity }} tilbage",
-      "inventory_out_of_stock": "Ikke på lager",
-      "inventory_out_of_stock_continue_selling": "På lager",
-      "sku": "SKU"
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling."
     },
     "modal": {
       "label": "Mediegalleri"
@@ -173,7 +154,7 @@
     "facets": {
       "apply": "Anvend",
       "clear": "Ryd",
-      "clear_all": "Fjern alle",
+      "clear_all": "Ryd alt",
       "from": "Fra",
       "filter_and_sort": "Filtrer og sortér",
       "filter_by_label": "Filter:",
@@ -195,15 +176,12 @@
       "sort_button": "Sortér",
       "sort_by_label": "Sortér efter:",
       "to": "Til",
-      "clear_filter": "Fjern filter",
-      "filter_selected_accessibility": "{{ type }} ({{ count }} filtre er valgt)",
-      "show_more": "Vis mere",
-      "show_less": "Vis mindre"
+      "clear_filter": "Ryd filter"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Der blev ikke fundet nogen resultater for “{{ terms }}”. Kontrollér stavemåden, eller brug et andet ord eller udtryk.",
+      "no_results": "Der blev ikke fundet nogen resultater for \"{{ terms }}\". Kontrollér stavemåden, eller brug et andet ord eller udtryk.",
       "results_with_count": {
         "one": "{{ count }} resultat",
         "other": "{{ count }} resultater"
@@ -211,24 +189,10 @@
       "title": "Søgeresultater",
       "page": "Side",
       "products": "Produkter",
-      "search_for": "Søg efter “{{ terms }}”",
+      "search_for": "Søg efter \"{{ terms }}\"",
       "results_with_count_and_term": {
         "one": "Der blev fundet {{ count }} resultat for “{{ terms }}”",
         "other": "Der blev fundet {{ count }} resultater for “{{ terms }}”"
-      },
-      "results_pages_with_count": {
-        "one": "{{ count }} side",
-        "other": "{{ count }} sider"
-      },
-      "results_products_with_count": {
-        "one": "{{ count }} produkt",
-        "other": "{{ count }} produkter"
-      },
-      "suggestions": "Forslag",
-      "pages": "Sider",
-      "results_suggestions_with_count": {
-        "one": "{{ count }} forslag",
-        "other": "{{ count }} forslag"
       }
     },
     "cart": {
@@ -242,8 +206,7 @@
         "comment": "Kommentar",
         "send": "Send",
         "post_success": "Tak for din henvendelse. Vi kontakter dig hurtigst muligt.",
-        "error_heading": "Juster følgende:",
-        "title": "Kontaktformular"
+        "error_heading": "Juster følgende:"
       }
     },
     "404": {
@@ -279,8 +242,7 @@
         "product": "Produkt",
         "price": "Pris",
         "total": "I alt",
-        "quantity": "Antal",
-        "image": "Produktbillede"
+        "quantity": "Antal"
       },
       "update": "Opdater",
       "login": {
@@ -306,7 +268,7 @@
     "collection_template": {
       "title": "Kollektion",
       "empty": "Der blev ikke fundet nogen produkter",
-      "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">fjern alle<\/a>"
+      "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">ryd alt<\/a>"
     },
     "video": {
       "load_video": "Indlæs video: {{ description }}"
@@ -319,9 +281,6 @@
       "play_slideshow": "Afspil diasshow",
       "carousel": "Karrusel",
       "slide": "Dias"
-    },
-    "page": {
-      "title": "Sidetitel"
     }
   },
   "localization": {
@@ -408,7 +367,7 @@
     },
     "reset_password": {
       "title": "Forny adgangskode til konto",
-      "subtext": "Indtast en ny adgangskode",
+      "subtext": "Indtast en ny adgangskode for {{ email }}",
       "password": "Adgangskode",
       "password_confirm": "Bekræft adgangskode",
       "submit": "Nulstil adgangskode"
@@ -435,9 +394,7 @@
       "tracking_url": "Sporingslink",
       "tracking_company": "Fragtfirma",
       "tracking_number": "Trackingnummer",
-      "subtotal": "Subtotal",
-      "total_duties": "Told",
-      "total_refunded": "Refunderet"
+      "subtotal": "Subtotal"
     }
   },
   "gift_cards": {
