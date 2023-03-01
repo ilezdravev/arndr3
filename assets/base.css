@@ -2137,9 +2137,9 @@ details-disclosure>details{
     margin:1px;
     border-width:1px;
     border-style:solid;
-    background-color:#fe8369;
+    background-color:#1ABAF2;
     border-radius:10px;
-    border-color:#fe8369;
+    border-color:#1ABAF2;
     display:inline-block;
     font-weight:700
 }
@@ -2216,7 +2216,7 @@ details-disclosure>details{
 }
   
 .custom-search-button{
-    background-color: #fe8369;
+    background-color: #1ABAF2;
     width: 100%;
     vertical-align: middle;
     font-size: 1.1em;

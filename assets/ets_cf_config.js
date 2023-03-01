@@ -16,7 +16,7 @@ const ETS_CF_DATA = [{
 		"decoration": [{
 			"background_position": "center",
 			"background_size": "auto",
-			"btn_background_color": "#fe8369",
+			"btn_background_color": "#1ABAF2",
 			"btn_background_hover_color": "#1c1c1c",
 			"btn_submit_position": "left",
 			"btn_text_hover_color": "#ffffff",

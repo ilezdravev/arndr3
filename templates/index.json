@@ -89,8 +89,8 @@
         "Section_padding_bottom": 80,
         "Section_Background": "#ffffff",
         "Class": "",
-        "image": "shopify:\/\/shop_images\/mike-g.png",
-        "youtube_video": "https:\/\/www.youtube.com\/watch?v=LvMQDAp9Xqk"
+        "image": "shopify:\/\/shop_images\/49721694_architecture-is-an-art-form-an-unrecognizable-architect-working-on-her-drafting-table.jpg",
+        "youtube_video": ""
       }
     },
     "9a2742ae-d84d-41d8-ab82-b4d98364e3da": {
@@ -99,7 +99,7 @@
         "template--14850730688601__9a2742ae-d84d-41d8-ab82-b4d98364e3da-1668595552e784c864-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group.png",
+            "image": "shopify:\/\/shop_images\/Group_7798c789-c315-46a8-ab06-fc256e955f3a.png",
             "title": "First time home buyers",
             "text": "",
             "link_label": "",
@@ -109,7 +109,7 @@
         "template--14850730688601__9a2742ae-d84d-41d8-ab82-b4d98364e3da-1668595552e784c864-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/arrows-maximize.png",
+            "image": "shopify:\/\/shop_images\/arrows-maximize_1a900de7-99b1-439f-a1ad-2a375556b717.png",
             "title": "Upgrading to a bigger home",
             "text": "",
             "link_label": "",
@@ -119,7 +119,7 @@
         "template--14850730688601__9a2742ae-d84d-41d8-ab82-b4d98364e3da-1668595552e784c864-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/arrows-minimize.png",
+            "image": "shopify:\/\/shop_images\/arrows-minimize_acd255b1-c195-40cb-a5a7-76b573add7af.png",
             "title": "Downsizing to a smaller home",
             "text": "",
             "link_label": "",
@@ -129,7 +129,7 @@
         "e1dfb876-fcb9-4ef9-94f2-6336c68be01c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bulldozer.png",
+            "image": "shopify:\/\/shop_images\/bulldozer_00c16daa-0286-4dd1-b357-b8926bed423c.png",
             "title": "Builders",
             "text": "",
             "link_label": "",
@@ -167,6 +167,7 @@
     },
     "164794653927366827": {
       "type": "Home-custom-feature-product",
+      "disabled": true,
       "settings": {
         "title": "Most popular",
         "collection": "popular-house-plans",
@@ -196,7 +197,7 @@
       "type": "Home-Custom-Feature-product-new-plans",
       "settings": {
         "title": "New Plans",
-        "collection": "new-plans",
+        "collection": "barndominium-house-plans",
         "products_to_show": 6,
         "color_scheme": "background-1",
         "show_view_all": true,
@@ -225,7 +226,7 @@
         "b21092b2-43e2-4082-b9d3-4c1fa10730d6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_us1.webp",
+            "image": "shopify:\/\/shop_images\/Buy_us1_77455a39-2cbc-4729-8400-aa3e15f41738.webp",
             "title": "Master of design - 31 years  of experience",
             "text": "",
             "link_label": "",
@@ -235,7 +236,7 @@
         "a786ecf9-4d65-4108-9585-588d6e3aa282": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_us2.webp",
+            "image": "shopify:\/\/shop_images\/Buy_us2_ef6321fd-57d5-4749-a575-8abcf455abe0.webp",
             "title": "Lot fit guarantee",
             "text": "",
             "link_label": "",
@@ -245,7 +246,7 @@
         "4c8d53f1-8743-4fd6-8db3-0668a45b914b": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_us3.png",
+            "image": "shopify:\/\/shop_images\/Buy_us3_e0c6e6e1-4dd5-44a2-8620-a0ffb83d7148.png",
             "title": "Customize the house till its just right for you and your family",
             "text": "",
             "link_label": "",
@@ -255,7 +256,7 @@
         "270e97d6-de29-42df-ade0-289172d0f4c6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Buy_us4.webp",
+            "image": "shopify:\/\/shop_images\/Buy_us4_664a5067-1685-43db-afd6-9395a922be21.webp",
             "title": "Buy direct from the one of America's trusted designers",
             "text": "",
             "link_label": "",
@@ -341,99 +342,43 @@
     "1647841815c1875195": {
       "type": "collection-list",
       "blocks": {
-        "1647841815aec87c72-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "craftsman-house-plans"
-          }
-        },
-        "1647841815aec87c72-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "luxury-house-plans"
-          }
-        },
-        "1647841815aec87c72-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "coastal"
-          }
-        },
-        "2b5e7514-6f1e-44ff-a76b-aa8f7e666d11": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "modern-farmhouse-plans"
-          }
-        },
-        "61fff4ce-fa05-4ec2-9356-2e7c4a8fd532": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "french-country-house-plans"
-          }
-        },
-        "733ab5d5-730e-49c5-85ef-cd4a094e0a2d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "colonial-house-plans"
-          }
-        },
-        "f1e05c6f-1cf9-43e3-be2e-5bcb4a024fb7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "european-manor-house-plans"
-          }
-        },
-        "baf4f906-5a70-4f38-803b-8a5e179d4c79": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "traditional-house-plans"
-          }
-        },
-        "009ec445-6d6c-445c-8a7d-5e1cdf1dd2a5": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lake-house-plans"
-          }
-        },
-        "1f498177-f151-4ba3-8cbe-5444966f3707": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ranch-house-plans"
-          }
-        },
         "dd058a9c-88c1-498f-acac-0802fccf2f00": {
           "type": "featured_collection",
           "settings": {
             "collection": "barndominium-house-plans"
           }
         },
-        "1e2d0bf8-2cb9-4efc-a254-fac7f6a35bbe": {
+        "5d59eacb-a703-4592-b750-926b4fb2a091": {
           "type": "featured_collection",
           "settings": {
-            "collection": "detached-garage-plans"
+            "collection": "garage-apartment-plans"
           }
         },
-        "c4c10d53-1995-4702-b5ba-af6320455e3a": {
+        "118d84bc-eaa4-4960-9f5e-db707488b21b": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "rv-garage-with-living-quarters"
+          }
+        },
+        "9c22fcfb-27df-49f6-b2d2-c1bff25abe08": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "barndominium-with-shop"
+          }
+        },
+        "17e22a44-bf23-4cc1-94a6-e3eb1fd74835": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-plans"
           }
         }
       },
       "block_order": [
-        "1647841815aec87c72-0",
-        "1647841815aec87c72-1",
-        "1647841815aec87c72-2",
-        "2b5e7514-6f1e-44ff-a76b-aa8f7e666d11",
-        "61fff4ce-fa05-4ec2-9356-2e7c4a8fd532",
-        "733ab5d5-730e-49c5-85ef-cd4a094e0a2d",
-        "f1e05c6f-1cf9-43e3-be2e-5bcb4a024fb7",
-        "baf4f906-5a70-4f38-803b-8a5e179d4c79",
-        "009ec445-6d6c-445c-8a7d-5e1cdf1dd2a5",
-        "1f498177-f151-4ba3-8cbe-5444966f3707",
         "dd058a9c-88c1-498f-acac-0802fccf2f00",
-        "1e2d0bf8-2cb9-4efc-a254-fac7f6a35bbe",
-        "c4c10d53-1995-4702-b5ba-af6320455e3a"
+        "5d59eacb-a703-4592-b750-926b4fb2a091",
+        "118d84bc-eaa4-4960-9f5e-db707488b21b",
+        "9c22fcfb-27df-49f6-b2d2-c1bff25abe08",
+        "17e22a44-bf23-4cc1-94a6-e3eb1fd74835"
       ],
       "settings": {
         "title": "Categories",

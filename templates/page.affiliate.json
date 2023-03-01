@@ -54,7 +54,7 @@
         "fa12b49a-f42b-458b-be0a-8872c720fd86": {
           "type": "Icon-box",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Group_98.png",
+            "icon_image": "shopify:\/\/shop_images\/Group_98_1.png",
             "Main_heading": "Step 1:",
             "Sub_heading": "Apply Through Shareasale.com",
             "Icon_paragraph": "Sign up for a shareasale affiliate link, and apply for the Garrell Associates program (LINK ) https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=134759 (LINK)",
@@ -65,7 +65,7 @@
         "7c352cf3-b7ce-461d-b056-a783c2d83c77": {
           "type": "Icon-box",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Group_100.png",
+            "icon_image": "shopify:\/\/shop_images\/Group_100_1.png",
             "Main_heading": "Step 2:",
             "Sub_heading": "Approval Process by Garrell Associates for our 10% commission",
             "Icon_paragraph": "Receive instant approval. Use the link found in your account for your website and social media posts.",
@@ -76,7 +76,7 @@
         "12dc9f35-6646-4332-b578-b9c54015808c": {
           "type": "Icon-box",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Group_102.png",
+            "icon_image": "shopify:\/\/shop_images\/Group_102_1.png",
             "Main_heading": "Step 3:",
             "Sub_heading": "Feature our home plans on your website or social media!",
             "Icon_paragraph": "Create content, take image and text from our website or our pinterest account (LINK https:\/\/www.pinterest.com\/garrellassociate\/), promote the home plans using your affiliate link.",
@@ -91,7 +91,7 @@
         "12dc9f35-6646-4332-b578-b9c54015808c"
       ],
       "settings": {
-        "After-Image": "shopify:\/\/shop_images\/arrow-img.png",
+        "After-Image": "shopify:\/\/shop_images\/arrow-img_d460b8ff-1d52-4546-a991-383239cb6290.png",
         "Section_padding_top": 30,
         "Section_padding_bottom": 30,
         "Class": "afiliate_iconbox"

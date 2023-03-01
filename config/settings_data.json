@@ -1,6 +1,6 @@
 {
   "current": {
-    "colors_accent_1": "#fe8369",
+    "colors_accent_1": "#1abaf2",
     "colors_text": "#303030",
     "type_header_font": "playfair_display_n4",
     "type_body_font": "muli_n4",
@@ -18,8 +18,8 @@
     "checkout_logo_position": "center",
     "checkout_body_background_color": "#f4f4f4",
     "checkout_sidebar_background_color": "#fefefe",
-    "checkout_accent_color": "#fe8369",
-    "checkout_button_color": "#fe8369",
+    "checkout_accent_color": "#1ABAF2",
+    "checkout_button_color": "#1ABAF2",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -43,7 +43,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/logo.webp",
+          "logo": "shopify:\/\/shop_images\/all-barndominium-plans-logo.png",
           "logo_width": 155,
           "logo_position": "middle-left",
           "menu": "main-menu",
