@@ -89,8 +89,7 @@
         "Section_padding_bottom": 80,
         "Section_Background": "#ffffff",
         "Class": "",
-        "image": "shopify:\/\/shop_images\/49721694_architecture-is-an-art-form-an-unrecognizable-architect-working-on-her-drafting-table.jpg",
-        "youtube_video": ""
+        "image": "shopify:\/\/shop_images\/49721694_architecture-is-an-art-form-an-unrecognizable-architect-working-on-her-drafting-table.jpg"
       }
     },
     "9a2742ae-d84d-41d8-ab82-b4d98364e3da": {
@@ -339,61 +338,6 @@
         "Section_Background": "#ffffff"
       }
     },
-    "1647841815c1875195": {
-      "type": "collection-list",
-      "blocks": {
-        "dd058a9c-88c1-498f-acac-0802fccf2f00": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "barndominium-house-plans"
-          }
-        },
-        "5d59eacb-a703-4592-b750-926b4fb2a091": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "garage-apartment-plans"
-          }
-        },
-        "118d84bc-eaa4-4960-9f5e-db707488b21b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rv-garage-with-living-quarters"
-          }
-        },
-        "9c22fcfb-27df-49f6-b2d2-c1bff25abe08": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "barndominium-with-shop"
-          }
-        },
-        "17e22a44-bf23-4cc1-94a6-e3eb1fd74835": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "new-plans"
-          }
-        }
-      },
-      "block_order": [
-        "dd058a9c-88c1-498f-acac-0802fccf2f00",
-        "5d59eacb-a703-4592-b750-926b4fb2a091",
-        "118d84bc-eaa4-4960-9f5e-db707488b21b",
-        "9c22fcfb-27df-49f6-b2d2-c1bff25abe08",
-        "17e22a44-bf23-4cc1-94a6-e3eb1fd74835"
-      ],
-      "settings": {
-        "title": "Categories",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "show_view_all": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "Section_Class": "Home_Categories",
-        "Section_padding_top": 80,
-        "Section_padding_bottom": 80,
-        "Section_Background": "#ffffff"
-      }
-    },
     "164793604205cacbf4": {
       "type": "home-design-modified",
       "settings": {
@@ -425,6 +369,7 @@
       "blocks": {
         "295a346e-0b86-4550-bfb3-619d01cfa09d": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/John-Rippie.png",
             "content": "In working with Garrell Associates, it feeds into my wife's and I vision of what we wanted for our forever home. We would not only work with Garrell Associates again, we would recommend that anybody out there looking for a home plan or a custom home plan with would with Garrell Associates. They have been wonderful to work with.",
@@ -479,7 +424,6 @@
     "164801817278d99008",
     "multicolumn-with-image",
     "multicolumn",
-    "1647841815c1875195",
     "164793604205cacbf4",
     "68a50992-3f62-4fcc-bd4f-c8db4a4b4c1c",
     "1647864437a462762d"

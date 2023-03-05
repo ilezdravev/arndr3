@@ -3125,3 +3125,10 @@ form.input-group.search-bar .input-group-field { width: 83%;}
         fill: #1ABAF2 !important;
         stroke: #1ABAF2 !important;
     }
+
+/* ------------------------ */
+.stretch-image{
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+}   
