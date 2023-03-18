@@ -4,20 +4,28 @@ class DetailsModal extends HTMLElement {
     this.detailsContainer = this.querySelector('details');
     this.summaryToggle = this.querySelector('summary');
 
-    this.detailsContainer.addEventListener(
-      'keyup',
-      (event) => event.code.toUpperCase() === 'ESCAPE' && this.close()
-    );
-    this.summaryToggle.addEventListener(
-      'click',
-      this.onSummaryClick.bind(this)
-    );
-    this.querySelector('button[type="button"]').addEventListener(
-      'click',
-      this.close.bind(this)
-    );
-
-    this.summaryToggle.setAttribute('role', 'button');
+    if(this.detailsContainer){
+      this.detailsContainer.addEventListener(
+        'keyup',
+        (event) => event.code.toUpperCase() === 'ESCAPE' && this.close()
+      );
+    }
+    if(this.summaryToggle){
+      this.summaryToggle.addEventListener(
+        'click',
+        this.onSummaryClick.bind(this)
+      );
+    }
+    if(this.querySelector('button[type="button"]')){
+      this.querySelector('button[type="button"]').addEventListener(
+        'click',
+        this.close.bind(this)
+      );  
+    }
+    
+    if(this.summaryToggle){
+      this.summaryToggle.setAttribute('role', 'button');
+    }
   }
 
   isOpen() {

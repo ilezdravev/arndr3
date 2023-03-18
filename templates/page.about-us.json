@@ -6,7 +6,7 @@
         "About_banner_img": "shopify:\/\/shop_images\/unsplash_Dr6VBM0KNsw.png",
         "Slider_banner_activate": false,
         "about_banner_heading": "About Us",
-        "about_Banner_Para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis sem sapien, sagittis aliquet in nulla lectus quisque. Feugiat dictum quis sit ullamcorper viverra eu id tempus. Id risus platea donec proin. Eleifend euismod ultrices vitae, egestas.\n<br><br>\nUltricies ultricies ornare in ipsum convallis imperdiet amet, amet. Ullamcorper sed ut hendrerit mi faucibus. Pulvinar rhoncus, a felis feugiat. Ipsum lectus vitae amet feugiat.",
+        "about_Banner_Para": "We're All Barndominium Plans. Where you'll find a passionate company that day-dreams about Barndominium designs. We specialise on procuring and designing luxury & modern Barndominium house plans. \n<br><br>\nExplore our collection of Barndominium plans, some of which we have designed in-house and others which have been sourced from America's leading Barndominium designers & architects.",
         "Banner_Awards_Display": true,
         "Section_padding_top": 90,
         "Section_padding_bottom": 30,
@@ -41,24 +41,25 @@
         "Section_padding_bottom": 80,
         "Section_Background": "#ffffff",
         "Class": "About_us_sec2",
-        "youtube_video": ""
+        "image": "shopify:\/\/shop_images\/46515824_architect-in-virtual-reality-helmet-sitting-at-the-table.jpg"
       }
     },
     "About-Qoute": {
       "type": "home-about-us-section",
       "settings": {
         "Home_about_us_Quote": "Every day is another opportunity to create ever better, more distinctive, and more livable designs – designs that make \na home a joy and a treasure",
-        "Home_about_us_para": "Michael cares about each client and becomes a faithful steward of their dreams, keeping loyal clients coming back. That caring extends to their community as well. Thousands of Garrell Associates clients would agree.",
+        "Home_about_us_para": "Michael cares about each client and becomes a faithful steward of their dreams, keeping loyal clients coming back. That caring extends to their community as well. Thousands of his clients would agree.",
         "Show_paragraph_images": false,
         "Section_padding_top": 20,
         "Section_padding_bottom": 60,
         "Section_Background": "#ffffff",
         "Class": "About_us_sec3",
-        "youtube_video": ""
+        "image": "shopify:\/\/shop_images\/49721694_architecture-is-an-art-form-an-unrecognizable-architect-working-on-her-drafting-table.jpg"
       }
     },
     "About-Blog-post": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog",
         "blog": "blog",

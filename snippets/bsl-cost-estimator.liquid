@@ -93,7 +93,7 @@
     cost_estimator_data["basement"] = basement
     cost_estimator_data["email"] = email
 
-    fetch('https://auto.garrellassociates.com/estimator/?' + new URLSearchParams(cost_estimator_data)).then((response) => response.text()).then(function(response){
+    fetch('https://auto.allbarndominiumplans.com/estimator/?' + new URLSearchParams(cost_estimator_data)).then((response) => response.text()).then(function(response){
       holder.textContent = response;
       holder.style.display = "block";
     })

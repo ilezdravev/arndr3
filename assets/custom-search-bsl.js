@@ -46,7 +46,8 @@ function update_search_results(data, filters) {
   } else {
     bsl_results = data.results
   }
-
+  console.log(data);
+  console.log(filters)
   
   data.results = bsl_results
   
@@ -58,11 +59,15 @@ function update_search_results(data, filters) {
   } else {
 
     $.each(data.results, function (key, value) {
+        console.log(value);
+      for (const key in value) {
+        // console.log(key)          
+      }
       let plan_id = value.plan_id
       if (isNumeric(plan_id) && plan_id.length < 5) {
         plan_id = "0" + plan_id
       }
-
+      // console.log(plan_id)
       results += "<a href='/products/" + value.handle + "'>"
       results += "<div class='search_resultX'><div class='search_result_inner'>"
       results += "<div class='card_image'>"
@@ -411,7 +416,9 @@ function bsl_search_partial() {
     filters: filters,
     order_by: sortby
   }
+  console.log(11111111111111)
 
+  console.log(search_json)
   const requestOptions = {
     method: 'POST',
     headers: {
@@ -420,10 +427,10 @@ function bsl_search_partial() {
     },
     body: JSON.stringify(search_json)
   };
-  fetch('https://auto.garrellassociates.com/search/', requestOptions)
+  
+  fetch('https://scripts.allbarndominiumplans.com/search/', requestOptions)
     .then(response => response.json())
     .then(data => update_search_results(data, filters));
-
 
 }
 

@@ -14,14 +14,14 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/CAM2.webp",
-            "url": "https:\/\/garrellassociates.com\/products\/seaside-lodge"
+            "url": "https:\/\/allbarndominiumplans.com\/products\/seaside-lodge"
           }
         },
         "450398c2-c311-41e5-9c25-0637b561123f": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/12WTilUsAwml5yNyxAiDTZtMB0MnvHhNK.webp",
-            "url": "https:\/\/garrellassociates.com\/products\/pine-lake-cottage"
+            "url": "https:\/\/allbarndominiumplans.com\/products\/pine-lake-cottage"
           }
         }
       },
@@ -33,7 +33,7 @@
       "settings": {
         "text_1": "Find the perfect Barndominium Plan",
         "text_2": "",
-        "Banner_advance_Search": "https:\/\/garrellassociates.com\/pages\/search"
+        "Banner_advance_Search": "https:\/\/allbarndominiumplans.com\/pages\/search\/"
       }
     },
     "Counter-Section": {
@@ -226,7 +226,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_us1_77455a39-2cbc-4729-8400-aa3e15f41738.webp",
-            "title": "Master of design - 31 years  of experience",
+            "title": "Master Designers & Decades Of Experience",
             "text": "",
             "link_label": "",
             "link": ""
@@ -236,7 +236,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_us2_ef6321fd-57d5-4749-a575-8abcf455abe0.webp",
-            "title": "Lot fit guarantee",
+            "title": "Pre-Purchase Lot Fit Guarantee",
             "text": "",
             "link_label": "",
             "link": ""
@@ -246,7 +246,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_us3_e0c6e6e1-4dd5-44a2-8620-a0ffb83d7148.png",
-            "title": "Customize the house till its just right for you and your family",
+            "title": "Customize The House Plan Until It's Just Right",
             "text": "",
             "link_label": "",
             "link": ""
@@ -256,7 +256,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Buy_us4_664a5067-1685-43db-afd6-9395a922be21.webp",
-            "title": "Buy direct from the one of America's trusted designers",
+            "title": "Buy From America's Trusted Barndominium Designers",
             "text": "",
             "link_label": "",
             "link": ""
@@ -356,7 +356,7 @@
     "68a50992-3f62-4fcc-bd4f-c8db4a4b4c1c": {
       "type": "home-building-map",
       "settings": {
-        "heading": "Where <span>our homes<\/span> have been built?",
+        "heading": "Where <span>our barndominiums<\/span> have been built?",
         "mapbox_access_token": "pk.eyJ1IjoieWFzMTIzNjQiLCJhIjoiY2xjeDlwdjIzMW1jazNvbXhkZ2dlODBhNiJ9.51YATyD-rbdzTXjxuJo9-w",
         "Section_padding_top": 30,
         "map_height": 500,
@@ -381,8 +381,8 @@
         "700ff90e-8ebb-41e7-bf7c-7f3ad583647b": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/house2.png",
-            "content": "We've purchased 2 different plans from Garrell and couldn't be happier. We asked that one set be reversed and that was handled easily. Both homes we built came out beautifully. What was really nice is that the plans can actually be built as drawn. We seen plans from other companies that included architectural details that were un workable or wouldn't meet code. I'd heartily recommend Garrell Associates.",
+            "image": "shopify:\/\/shop_images\/2023-03-07_17-49-18.png",
+            "content": "We've purchased 2 different plans from All Barndominium Plans and couldn't be happier. We asked that one set be reversed and that was handled easily. Both barns we built came out beautifully. What was really nice is that the plans can actually be built as drawn. We seen plans from other companies that included architectural details that were un workable or wouldn't meet code. I'd heartily recommend AllBarndominiumPlans.com",
             "youtube_video": "",
             "author": "Gregg Heath",
             "text": "August, 2022"
@@ -391,8 +391,8 @@
         "b11fd104-f364-48f6-bcfc-3d3bf618c23a": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/house3.png",
-            "content": "Garrell stands out from other designers in that ALL of their plans are aesthetically pleasing to the eye.  They have great floor plans that you can use as-is or tweak to your needs.  No wasted space or undefined uses for rooms.  That's what drew me to them in the first place.  Other house designs that I looked at online had very questionable layouts. Some were just a collection of boxes they called rooms and many just didn't seem to flow right. Garrell plans have a good flow to them.\n\nI have built two houses with Garrell plans.  Both were different designs and each turned out beautifully.  One was a traditional house and my current one is a mountain house.\n\nI built my latest Garrell house on top of a mountain.  I've attached a couple of photos to show you the quality and how it turned out. My wife and I are really pleased with the result.",
+            "image": "shopify:\/\/shop_images\/2023-03-07_17-48-21.png",
+            "content": "AllBarndos stands out from other brokers in that ALL of their plans are aesthetically pleasing to the eye.  They have great floor plans that you can use as-is or tweak to your needs.  No wasted space or undefined uses for rooms.  That's what drew me to them in the first place.  Other websites that I looked at online had very questionable layouts. Some were just a collection of boxes they called rooms and many just didn't seem to flow right. AllBarndominium plans have a good flow to them.",
             "youtube_video": "",
             "author": "David Sampson",
             "text": "May, 2022"

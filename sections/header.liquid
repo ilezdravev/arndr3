@@ -254,10 +254,12 @@
               -%}
             </span>
           </a>
+          {% render 'custom-contactUs-popup' %}
+
         {%- else -%}
           <div class="Custom_login_box">
             <a class="btn" href="#login">Log in</a>
-        </div>
+          </div>
           {% render 'header-login-popup' %}
           {% render 'custom-contactUs-popup' %}
         {%- endif -%}
@@ -746,10 +748,10 @@
       this.searchModal.close(false);
     }
   }
-
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
-
+{% render 'change-headline' %}
+ 
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -773,10 +775,10 @@
     "url": {{ shop.url | append: page.url | json }}
   }
 </script>
-
+<script  src="{{ 'custom.js' |asset_url }}"></script>
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: "/pages/search/" | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
+  <script  type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "WebSite",

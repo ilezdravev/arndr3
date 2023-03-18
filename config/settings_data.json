@@ -13,7 +13,7 @@
     "social_twitter_link": "https:\/\/twitter.com",
     "social_facebook_link": "https:\/\/facebook.com",
     "social_instagram_link": "http:\/\/instagram.com",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/Group_9988.png",
     "checkout_logo_position": "center",
     "checkout_body_background_color": "#f4f4f4",
@@ -51,7 +51,7 @@
           "enable_sticky_header": true,
           "margin_bottom": 0,
           "header_phoneNo": "(888) 814-1494",
-          "header_MailTo": "sales@garrellassociates.com"
+          "header_MailTo": "sales@allbarndominiumplans.com"
         }
       },
       "footer": {
@@ -99,7 +99,7 @@
           "newsletter_heading": "Subscribe to our emails",
           "Copyright_Enable": true,
           "terms_Condition_Enable": true,
-          "Copyright_text": "2022 Garrell Associates",
+          "Copyright_text": "2022 All Barndominium Plans",
           "termService_text": "#!",
           "enable_country_selector": false,
           "enable_language_selector": false,
@@ -123,6 +123,11 @@
       "807785498547235276": {
         "type": "shopify:\/\/apps\/contact-form-ultimate\/blocks\/app-embed-block\/7f36c127-5e2b-4909-bcc7-2631483e37a4",
         "disabled": false,
+        "settings": {}
+      },
+      "10042746950867549768": {
+        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": true,
         "settings": {}
       }
     }

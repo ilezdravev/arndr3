@@ -3132,3 +3132,11 @@ form.input-group.search-bar .input-group-field { width: 83%;}
     aspect-ratio: auto;
     object-fit: cover;
 }   
+
+/* / */
+.shopify-policy__container{
+    max-width: var(--page-width);
+}
+.shopify-policy__title{
+    margin-bottom: 20px;
+}

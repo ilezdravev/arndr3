@@ -217,7 +217,8 @@
 
     <div class="header__icons">
       
-      <div class="Header_phoneNo">
+     <div class="contact_icons">
+        <div class="Header_phoneNo">
         <a href="tel:{{ section.settings.header_phoneNo }}"> 
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -228,7 +229,7 @@
         </a>
       </div>
       <div class="Header_mail">
-        <a href="mailto:{{ section.settings.header_MailTo }}"> 
+        <a href="mailto:{{ section.settings.header_MailTo }} "> 
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                 <rect x="3" y="5.5" width="18" height="14" rx="2" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -237,6 +238,7 @@
             </span>
         </a>
       </div>
+     </div>
       
       {%- if shop.customer_accounts_enabled -%}
         {%- if customer -%}
@@ -252,10 +254,12 @@
               -%}
             </span>
           </a>
+          {% render 'custom-contactUs-popup' %}
+
         {%- else -%}
           <div class="Custom_login_box">
             <a class="btn" href="#login">Log in</a>
-        </div>
+          </div>
           {% render 'header-login-popup' %}
           {% render 'custom-contactUs-popup' %}
         {%- endif -%}
@@ -744,10 +748,10 @@
       this.searchModal.close(false);
     }
   }
-
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
-
+{% render 'change-headline' %}
+ 
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -771,10 +775,10 @@
     "url": {{ shop.url | append: page.url | json }}
   }
 </script>
-
+<script  src="{{ 'custom.js' |asset_url }}"></script>
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: "/pages/search/" | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
+  <script  type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "WebSite",

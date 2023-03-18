@@ -228,14 +228,13 @@
       ],
       "settings": {
         "Home_about_us_Quote": "I design the homes that <span>my clients want <\/span> to build, not the home I want them to build",
-        "Home_about_us_para": "Have your home plans customised by award winning designer and Garrell Associates Inc, Founder, Michael W. Garrell.\n\nMike has earned the firm more than 200 professional awards, with numerous Street of Dreams® honers. His “Tranquility” show home earned the firm the prestigious “Best in American Living Award” (BALA) from Professional Builder magazine.",
+        "Home_about_us_para": "Have your home plans customised by award winning designer Michael W. Garrell.\n\nMike has earned the firm more than 200 professional awards, with numerous Street of Dreams® honers. His “Tranquility” show home earned the firm the prestigious “Best in American Living Award” (BALA) from Professional Builder magazine.",
         "Show_paragraph_images": false,
         "Section_padding_top": 30,
         "Section_padding_bottom": 30,
         "Section_Background": "#ffffff",
         "Class": "",
-        "image": "shopify:\/\/shop_images\/mike-g.png",
-        "youtube_video": "https:\/\/www.youtube.com\/watch?v=LvMQDAp9Xqk"
+        "image": "shopify:\/\/shop_images\/mike-g.png"
       }
     },
     "product-recommendations": {

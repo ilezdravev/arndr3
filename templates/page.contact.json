@@ -72,8 +72,8 @@
       "settings": {
         "heading": "Contact Us",
         "content": "<p>Questions on a plan? We're here to help. Fill out the form below and we'll get you answers.<\/p>",
-        "links-heading": "Related Links",
-        "contact-info-heading": "Contact Information",
+        "links-heading": "=",
+        "contact-info-heading": "",
         "contact-info": "<p><\/p><p><strong>Phone<\/strong> <a href=\"tel:1-888-814-1494\">1 (888) 814-1494<\/a><\/p><p><\/p>",
         "color_scheme": "background-1",
         "padding_top": 36,

@@ -461,7 +461,7 @@
                                     <div id="tabs-content">
                                         <div id="tab1" class="tab-content">
                                             {%- comment -%}<div class="pdfUploaderPdfList" id="PDF_display"></div>{%- endcomment -%}
-                                            {% if product.metafields.custom.pdf_screen_shots == blacnk %}
+                                            {% if product.metafields.custom.pdf_screen_shots == blank %}
                                                 <p>No Image Uploaded Yet</p>
                                             {% endif %}
                                             <div class="owl-carousel carousal_image_galary owl-theme">
@@ -474,12 +474,12 @@
                                                             <span class="customize_btn zoom_out_img">{% render 'zoomout_img_icon'  %}</span>
                                                             <span class="customize_btn reset_img">{% render 'Reset_image_icon'  %}</span>
                                                             <div class="img_div">
-                                                                <img src="{{ item | img_url : "" }}" style="width: 770px; height: 480px;" alt="">
+                                                                <img src="{{ item }}" style="width: 770px; height: 480px;" alt="">
                                                             </div>
                                                         </div>
                                                         <div class="mobile_view_pdf">
-                                                          <a data-fancybox="gallery" href="{{ item | img_url : "" }}">
-                                                            <img class="rounded" src="{{ item | img_url : "" }}" />
+                                                          <a data-fancybox="gallery" href="{{ item }}">
+                                                            <img class="rounded" src="{{ item }}" />
                                                           </a>
                                                         </div>
                                                     </div>
@@ -1209,23 +1209,24 @@ this.showActiveMedia();
 }
 
 showActiveMedia() {
-this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element)
-=> {
-element.classList.remove('active');
-}
-)
-const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
-const activeMediaTemplate = activeMedia.querySelector('template');
-const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
-activeMedia.classList.add('active');
-activeMedia.scrollIntoView();
+    if(this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`)){
+        this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element)
+        => {element.classList.remove('active')})
+        const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
+        const activeMediaTemplate = activeMedia.querySelector('template');
+        const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
+        activeMedia.classList.add('active');
+        activeMedia.scrollIntoView();
 
-const container = this.querySelector('[role="document"]');
-container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
+        const container = this.querySelector('[role="document"]');
+        container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
 
-if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
-activeMedia.loadContent();
-}
+        if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
+        activeMedia.loadContent();
+        }
+    }
+
+
 }
 
 if (!customElements.get('product-modal')) customElements.define('product-modal', ProductModal);
@@ -2144,30 +2145,55 @@ if (!customElements.get('product-modal')) customElements.define('product-modal',
     jQuery(this).next('.tooltip').toggleClass('active');
 })
 
-  jQuery(document).on('change', 'input[type="checkbox"]', function() {
-    var calculated = jQuery('#calculated_option_total').text();
+function changePrice(){
+    var calculated = 0;
+    if(document.querySelector('#calculated_option_total')){
+        calculated = jQuery('#calculated_option_total').text();
+    } else{
+        if(document.querySelector('.hulkapps_option_set')){
+           let selectedPlans =  document.querySelector('.hulkapps_option_set').querySelectorAll('input:checked');
+            for(let i = 0; i < selectedPlans.length; i ++){
+                console.log($(selectedPlans[i]).attr('data-price'));
+                calculated += parseFloat($(selectedPlans[i]).attr('data-price'));
+            }
+        }
+    }
     var plan_price = $(".selectPlanSet").find(":selected").data("price").replace("$", "").replace("USD", "").replace(",", "");
     var total =  parseInt(calculated)+parseInt(plan_price);
     jQuery('span#total_price').text('$'+ total.toLocaleString("en"));
     $(".total_price_con").show()
     
-})
-jQuery(document).on('change', 'input[type="radio"]', function() {
-    var calculated = jQuery('#calculated_option_total').text();
+}
+
+
+jQuery(document).on('change', 'input[type="checkbox"]', function() {
+    changePrice()
+    /*
+    var calculated = jQuery('#calculated_option_total').text() || 0;
     var plan_price = $(".selectPlanSet").find(":selected").data("price").replace("$", "").replace("USD", "").replace(",", "");
     var total =  parseInt(calculated)+parseInt(plan_price);
     jQuery('span#total_price').text('$'+ total.toLocaleString("en"));
-  $(".total_price_con").show()
+    $(".total_price_con").show()*/
     
+})
+jQuery(document).on('change', 'input[type="radio"]', function() {
+    changePrice();
+    /*var calculated = jQuery('#calculated_option_total').text() || 0;
+    var plan_price = $(".selectPlanSet").find(":selected").data("price").replace("$", "").replace("USD", "").replace(",", "");
+    var total =  parseInt(calculated)+parseInt(plan_price);
+    jQuery('span#total_price').text('$'+ total.toLocaleString("en"));
+    $(".total_price_con").show()*/
 })
 
 $(".selectPlanSet").on('change', function() {
   $(".price-item--regular").text($(".selectPlanSet").find(":selected").data("price").toLocaleString("en")+" USD");
-  var calculated = jQuery('#calculated_option_total').text();
+  changePrice()
+  /*function changePrice();
+    var calculated = jQuery('#calculated_option_total').text() || 0;
   var plan_price = ($(".selectPlanSet").find(":selected").data("price").replace("$", "").replace("USD", "").replace(",", ""));
   var total =  parseInt(calculated)+parseInt(plan_price);
   jQuery('span#total_price').text('$'+ total.toLocaleString("en"));
-  $(".total_price_con").show()
+  $(".total_price_con").show()*/
 });
 
 // Show the first tab and hide the rest

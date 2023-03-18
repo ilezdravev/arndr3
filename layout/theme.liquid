@@ -54,7 +54,16 @@
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
-
+      @font-face {
+        font-family: "Cera Pro";
+        src: url("https://cdn.shopify.com/s/files/1/0725/5877/2505/files/CeraPro-Regular.woff?v=1678205611") format("woff2");
+        font-weight: 400;
+       }
+       @font-face {
+        font-family: "Cera Pro";
+        src: url("https://cdn.shopify.com/s/files/1/0725/5877/2505/files/CeraPro-Bold.woff?v=1678205612") format("woff2");
+        font-weight: 500;
+       }
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
@@ -235,7 +244,7 @@
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'responsive.css' | asset_url | stylesheet_tag }}
 
-    {% include 'hulk_po_vd.liquid' %}
+    {% comment %} {% include 'hulk_po_vd.liquid' %} {% endcomment %}
     {% include 'hulkcode_common' %}
     <script
       src="https://ha-product-option.nyc3.digitaloceanspaces.com/assets/api/v2-beta/hulkcode.js?{{ 'now' | date: '%s'}}"
@@ -256,7 +265,7 @@
       }
     </style>
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
-</head>
+{% include 'hulk_po_vd' %}</head>
   <body class="gradient {{page.handle}} {{ template.name }} {%if template.name =='collection'%}{%- if collection.image == blank -%}col-image-null{%endif%}{%endif%}">
     <!-- BSL on element visible -->
     <script>
