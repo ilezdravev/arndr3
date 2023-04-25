@@ -328,7 +328,7 @@
 
 @media screen and (max-width:480px){
   
-    .select input.input-group-field.sqft, .select .selectBtn { font-size: 14px;}
+    .select input.input-group-field.sqft, .select .selectBtn { font-size: 11px;}
     .select .selectBtn:after { top: 40%;}
     p.search-filter-button { height: 50px;}
     .home_sec2 .inner_col h2 { font-size: 20px;}

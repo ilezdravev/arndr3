@@ -34,6 +34,17 @@
 
 
     }
+    .download-brochure{
+        width: 100%;
+        background: var(--primary_Color);
+        padding: 15px;
+        font-size: 20px;
+        border-color: var(--primary_Color);
+        line-height: 28px;
+        border-style: none;
+        color: white;
+    }
+       
 </style>
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -474,7 +485,7 @@
                                                             <span class="customize_btn zoom_out_img">{% render 'zoomout_img_icon'  %}</span>
                                                             <span class="customize_btn reset_img">{% render 'Reset_image_icon'  %}</span>
                                                             <div class="img_div">
-                                                                <img src="{{ item }}" style="width: 770px; height: 480px;" alt="">
+                                                                <img src="{{ item | img_url : "" }}" style="width: 770px;" alt="">
                                                             </div>
                                                         </div>
                                                         <div class="mobile_view_pdf">
@@ -502,6 +513,9 @@
                                         </div>
                                     </div> <!-- END tabs-content -->
                                 </div> <!-- END tabs -->
+                                {% if product.metafields.custom.pdf_brochure %}
+                                    <a href="{{ product.metafields.custom.pdf_brochure.value.url }}" target="_blank"><button class="download-brochure">Download The Brochure (PDF)</button></a>
+                                 {% endif %}
                             </div>
 
                             <div class="additional_information desktop_view">

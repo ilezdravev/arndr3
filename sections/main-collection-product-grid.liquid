@@ -96,7 +96,7 @@
       <div class="col-md-12">
         <!-- <div class="Searchform_col"> -->
         <div class="fliter_side">
-          <div class="filter_tab">
+          {% comment %} <div class="filter_tab">
             <!--
               <h3 style="margin-bottom:0px;">{%if  template.name  == 'collection'%}Filter
               search{%elsif template.name == 'Search' %}Save this search{%else%}Refine by
@@ -345,7 +345,7 @@
               </div>
               <a href="#!" class="Clear_All_Filter">Clear X</a>
             </form>
-          </div>
+          </div> {% endcomment %}
           <!--
             <hr />
             <div id="options">
@@ -358,7 +358,7 @@
             <div class="main_section {{template.name}}">
               {%- if collection.image != blank -%}
                 <div class="collection-hero__image-grid">
-                  <img srcset="{{collection.image | img_url:''}}">
+                  <img srcset="{{ collection.image | img_url:''}}">
                 </div>
               {%- endif -%}
             </div>
@@ -372,7 +372,112 @@
       <!-- Search Result row -->
       <div class="col-md-12">
         <div class="Searchresult_col">
-          <div id="searchresults"></div>
+          <div id="searchresults">
+            <div style="width:100%" class="product-dis-outerx" id="top-search">
+              {% comment %} {{ collection.products | json }} {% endcomment %}
+              {% comment %} {{ collection.products.size }} {% endcomment %}
+
+              {% paginate collection.products by 50 %}
+                {% for product in collection.products %}
+                  <a href="{{ product.url }}">
+                    <div class="search_resultX">
+                      <div class="search_result_inner">
+                        <div class="card_image">
+                          <div class="plan_id_search">
+                            {{ product.metafields.my_fields.plan_id }}
+                          </div>
+                          <img
+                            srcset="{%- if product.featured_image.width >= 550 -%}{{ product.featured_image | img_url: '550x' }} 550w,{%- endif -%}
+                              {%- if product.featured_image.width >= 720 -%}{{ product.featured_image | img_url: '720x' }} 720w,{%- endif -%}
+                              {%- if product.featured_image.width >= 990 -%}{{ product.featured_image | img_url: '990x' }} 990w,{%- endif -%}
+                              {%- if product.featured_image.width >= 1100 -%}{{ product.featured_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                              {%- if product.featured_image.width >= 1500 -%}{{ product.featured_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                              {%- if product.featured_image.width >= 2200 -%}{{ product.featured_image | img_url: '2200x' }} 2200w,{%- endif -%}
+                              {%- if product.featured_image.width >= 3000 -%}{{ product.featured_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                              {{ product.featured_image | img_url: 'master' }} {{ product.featured_image.width }}w"
+                            src="{{ product.featured_image | img_url: '1500x' }}"
+                            alt="{{ product.featured_image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ product.featured_image.width }}"
+                            height="{{ product.featured_image.height }}"
+                            class="img-fluid"
+                          >
+                          <div class="bed amti">
+                              <div class="bed amti-inner">
+                                  <span class="bedroom_icon"></span>
+                                  <span class="bedroom-count">1</span>
+                              </div>
+                              <span class="bedroom-title">Floor(s)</span>
+                          </div>
+                        </div>
+                        <h5>{{ product.title }}</h5>  
+                        <div class="amenitiesPro">
+                          <div class="bed amti">
+                            <div class="bed amti-inner">
+                              <span class="bedroom_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 8V6C4 4.89543 4.89543 4 6 4H8" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M4 16V18C4 19.1046 4.89543 20 6 20H8" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M16 4H18C19.1046 4 20 4.89543 20 6V8" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M16 20H18C19.1046 20 20 19.1046 20 18V16" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <circle cx="12" cy="12" r="3" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                </svg>                                        
+                              </span>
+                              <span class="bedroom-count">{{ product.metafields.my_fields.total_sqtft }}</span>
+                            </div>
+                            <span class="bedroom-title">SQ FT</span>
+                          </div>
+                          <div class="bed amti">
+                            <div class="bed amti-inner">
+                                <span class="bedroom_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 7V18" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M3 14H21" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M21 18V10C21 8.89543 20.1046 8 19 8H11V14" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <circle cx="7" cy="10" r="1" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                    </svg>
+                                </span>
+                                <span class="bedroom-count">{{ product.metafields.my_fields.bedrooms }}</span>
+                            </div>
+                            <span class="bedroom-title">BEDS</span>
+                          </div>
+                          <div class="bed amti">
+                            <div class="bed amti-inner">
+                              <span class="bedroom_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12H20C20.5523 12 21 12.4477 21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13C3 12.4477 3.44772 12 4 12Z" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M6 12V5C6 3.89543 6.89543 3 8 3H11V5.25" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M4 21L5 19.5" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M20 21L19 19.5" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </span>
+                              <span class="bedroom-count">2</span>
+                            </div>
+                            <span class="bedroom-title">{{ product.metafields.my_fields.bathrooms}}</span>
+                          </div>
+                          <div class="bed amti">
+                            <div class="bed amti-inner">
+                                <span class="bedroom_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 17L7 21L11 17" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M7 21V10C7 8.34315 8.34315 7 10 7H21" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M17 11L21 7L17 3" stroke="#FF8266" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="bedroom-count">
+                                  {{ product.metafields.my_fields.d_ref }} / {{ product.metafields.my_fields.w_ref }}
+                                  </span>
+                            </div>
+                            <span class="bedroom-title">Width/Depth</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                {% endfor %}
+              {% endpaginate %}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -390,7 +495,7 @@
 <script>
   var collection = "{{- collection.title | escape -}}";
 </script>
-<script src="{{ 'custom-search-bsl.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'custom-search-bsl.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
 <script>
   $(document).ready(function () {

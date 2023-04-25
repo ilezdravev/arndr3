@@ -428,6 +428,7 @@ function bsl_search_partial() {
     body: JSON.stringify(search_json)
   };
   
+  console.log(requestOptions);
   fetch('https://scripts.allbarndominiumplans.com/search/', requestOptions)
     .then(response => response.json())
     .then(data => update_search_results(data, filters));

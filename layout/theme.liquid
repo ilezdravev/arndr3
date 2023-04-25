@@ -265,7 +265,7 @@
       }
     </style>
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
-{% include 'hulk_po_vd' %}</head>
+{% include 'hulk_po_vd' %}{% render 'delivery_coder' %} </head>
   <body class="gradient {{page.handle}} {{ template.name }} {%if template.name =='collection'%}{%- if collection.image == blank -%}col-image-null{%endif%}{%endif%}">
     <!-- BSL on element visible -->
     <script>
